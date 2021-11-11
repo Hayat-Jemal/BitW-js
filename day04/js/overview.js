@@ -104,7 +104,9 @@ const g = c ? "yes" : "no"; // logical ? true : false
 // String methods:
 //  - charAt()
 "abc".charAt(0); // a
+"abc".charAt(2); //c
 "abc"[0]; // a
+
 //  - charCodeAt()
 "abc".charCodeAt(0); // 97
 String.fromCharCode(97); // a
@@ -126,7 +128,8 @@ String.fromCharCode(97); // a
 "abc".search(/bc/); // 1
 //  - slice()
 "abc".slice(1); // bc
-"abcdef".slice(2, 5); // cde
+console.log("abcdef".slice(2, 5)); // cde
+console.log("abcdef".slice(0, 5));  //abcde
 //  - split()
 "abc".split("b"); // ['a', 'c']
 //  - substr()
