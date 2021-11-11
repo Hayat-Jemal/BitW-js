@@ -132,6 +132,8 @@ console.log("abcdef".slice(2, 5)); // cde
 console.log("abcdef".slice(0, 5));  //abcde
 //  - split()
 "abc".split("b"); // ['a', 'c']
+console.log("abc".split("a")); //['', 'bc']
+console.log("abc".split("bc")); //['a', '']
 //  - substr()
 "abc".substr(1); // bc
 "abcdef".substr(2, 3); // cde
