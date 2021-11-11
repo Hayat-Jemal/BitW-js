@@ -63,6 +63,9 @@ switch (user.age) {
     case 14:
         console.log('congrats on being 14 (switch)')
         break;
+    case 10:
+        console.log("you are allowed to enter with a waiver because you don't have parent permission");
+      
     default:
         console.log('default');
 }
