@@ -104,6 +104,7 @@ const g = c ? "yes" : "no"; // logical ? true : false
 // String methods:
 //  - charAt()
 "abc".charAt(0); // a
+console.log("abc".charAt(0));
 "abc".charAt(2); //c
 "abc"[0]; // a
 
@@ -116,7 +117,7 @@ String.fromCharCode(97); // a
 "abc".indexOf("a"); // 0
 "abc".indexOf("b"); // 1
 //  - lastIndexOf()
-"abcabc".lastIndexOf("c"); // 5
+console.log("abcabc".lastIndexOf("c")); // 5
 //  - localeCompare()
 "abc".localeCompare("abc"); // 0
 "abc" === "abc"; // true
