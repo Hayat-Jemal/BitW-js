@@ -147,7 +147,7 @@ console.log("abc".split("bc")); //['a', '']
 //  - trim()
 " ab c ".trim(); // "ab c"
 
-/*
+
 // popup methods
 //  - alert()
 alert('Hello World'); // displays a popup return undefined
@@ -155,7 +155,7 @@ alert('Hello World'); // displays a popup return undefined
 confirm('Are you sure?'); // displays a popup with a yes/no button and returns true or false
 //  - prompt()
 prompt('What is your name?'); // displays a popup with a text input and returns the value if you choose ok else returns null
-*/
+
 
 // Math methods:
 //  - abs()
