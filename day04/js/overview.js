@@ -160,7 +160,7 @@ console.log(prompt('What is your name?')) // displays a popup with a text input 
 
 // Math methods:
 //  - abs()
-Math.abs(-10); // 10
+console.log(Math.abs(-10)); // 10
 //  - acos()
 Math.acos(0.5); // 1.0471975511965976
 //  - asin()
