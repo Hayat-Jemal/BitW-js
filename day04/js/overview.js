@@ -150,11 +150,12 @@ console.log("abc".split("bc")); //['a', '']
 
 // popup methods
 //  - alert()
-alert('Hello World'); // displays a popup return undefined
+console.log(alert('Hello World'))
+// displays a popup return undefined
 //  - confirm()
-confirm('Are you sure?'); // displays a popup with a yes/no button and returns true or false
+console.log(confirm("Are you sure?")); // displays a popup with a yes/no button and returns true or false
 //  - prompt()
-prompt('What is your name?'); // displays a popup with a text input and returns the value if you choose ok else returns null
+console.log(prompt('What is your name?')) // displays a popup with a text input and returns the value if you choose ok else returns null
 
 
 // Math methods:
