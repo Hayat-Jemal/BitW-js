@@ -9,3 +9,10 @@ function largerNumber() {
 
 }
 largerNumber()
+
+
+function test() {
+    alert("hello every one")
+}
+
+test()
