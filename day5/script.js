@@ -72,3 +72,20 @@ function addNums(num1 = 1, num2 = 5) {
 addNums();
 //wanna seee it in console?
 console.log(addNums(5,5));
+
+//ARROW FUNCTIONS - ES6 or 2015 Arrow functions were introduced
+
+
+const addNums = (num1 = 1, num2 = 5) => {
+    return num1 + num2;
+};
+console.log(addNums());
+
+// Other way to write (if you want paranthesis inside, you need the "return" keyword) (writing return with no brackets will give error)
+
+const addNums = num1 => num1 + 10;
+console.log(addNums(5));
+
+const addNums = (num1 = 1, num2 = 5) => num1 + num2;
+console.log(addNums());
+
