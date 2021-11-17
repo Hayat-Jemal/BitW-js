@@ -160,3 +160,41 @@ const todoText = todos.map(function(todo) {
     });
 
 console.log(todoText);
+const todoCompleted = todos.filter(function (todo) {
+  return todo.isCompleted === true;
+});
+
+const todoCompleted = todos
+  .filter(function (tasks) {
+    return tasks.isCompleted === true;
+  })
+  .map(function (tasks) {
+    return tasks.text;
+  });
+console.log(todoCompleted);
+
+//Globals VS Local Scope
+let x = 5; // global
+
+function someThing(y) {
+  const z = x + 5;
+  console.log(z);
+}
+
+function someThing(y) {
+  x = 8; // still global!
+  const z = x + 5;
+  console.log(z);
+}
+
+function someThing(y) {
+  const x = 5; // local
+  let z = x + 6;
+  console.log(z);
+}
+
+someThing();
+
+let x = 10;
+
+console.log(x);
