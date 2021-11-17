@@ -46,3 +46,29 @@ brag(3) // I can do 3 pushups
 console.log(function(count) {
     return("I can do " + count + " pushups");
 } (3)) // I can do 3 pushup
+
+//PARAMETERS
+
+function addNums(num1, num2) {
+    console.log(num1 + num2);
+};
+
+//You need to call the function
+addNums(5,4); //what happens if you dont put anything inside? NAN
+
+function addNums(num1 = 1, num2 = 5) {
+    console.log(num1 + num2);
+};
+
+addNums();
+//you can still pass numbers to overrride the default params
+
+//now normally you would return inside the function
+
+function addNums(num1 = 1, num2 = 5) {
+    return num1 + num2;
+};
+
+addNums();
+//wanna seee it in console?
+console.log(addNums(5,5));
