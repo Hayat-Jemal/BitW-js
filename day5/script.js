@@ -89,3 +89,29 @@ console.log(addNums(5));
 const addNums = (num1 = 1, num2 = 5) => num1 + num2;
 console.log(addNums());
 
+function isEven(number) {
+  if (number % 2 == 0) return true;
+  else return false;
+}
+
+alert(isEven(5));
+
+//METHODS VS FUNCTIONS
+//Function — a set of instructions that perform a task.
+//Method — a set of instructions that are associated with an object.
+
+FUNCTIONS;
+
+function welcomeMessage() {
+  console.log("Welcome to JavaScript");
+}
+// Call the function
+welcomeMessage();
+
+//Let’s also consider a function that receives inputs and returns outputs:
+function concatName(firstName, middleName, lastName) {
+  return firstName + " " + middleName + " " + lastName;
+}
+
+const fullName = concatName("jorge", "luis", "villalobos");
+console.log(fullName);
