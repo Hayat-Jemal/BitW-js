@@ -115,3 +115,48 @@ function concatName(firstName, middleName, lastName) {
 
 const fullName = concatName("jorge", "luis", "villalobos");
 console.log(fullName);
+
+//METHODS
+
+//A method, like a function, is a set of instructions that perform a task. The difference is that a method is associated with an object, while a function is not. Let’s explore some of JavaScript’s built-in methods.
+
+const todos = [
+    {
+        id: 1,
+        text: 'Do the dishes',
+        isCompleted: true
+    },
+    {
+        id: 2,
+        text: 'Take the trash out',
+        isCompleted: false
+    },
+    {
+        id: 3,
+        text: 'Clean the room',
+        isCompleted: true
+    }
+];
+
+const todoJSON = JSON.stringify(todos);
+console.log(todoJSON);
+//----------------------------------------------
+
+for ( let i=0; i < todos.length; i++) {
+    console.log(todos[i].text);
+};
+//-----------------------------------------
+
+for(let todo of todos) {
+    console.log(todo.text)
+}
+//-----------------------------------------
+
+todos.forEach(tasks => console.log(tasks.text));
+//-------------------------------------------
+
+const todoText = todos.map(function(todo) {
+    return todo.text;
+    });
+
+console.log(todoText);
