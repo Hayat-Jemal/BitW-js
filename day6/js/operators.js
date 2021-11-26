@@ -32,3 +32,28 @@ true - true; // 0
 true * true; // 1
 true / true; // 1
 true % true; // 0
+
+
+// comparison operators
+// == != === !== > < >= <=
+1 == 1; // true
+1 != 1; // false
+1 === 1; // true
+1 !== 1; // false
+1 == "1" // true
+1 === "1" // false
+1 != "1" // false
+1 !== "1" // true
+1 > 1; // false
+1 < 1; // false
+1 >= 1; // true
+1 <= 1; // true
+
+// logical operators
+// && || !
+true && true; // true (both sides are true) 
+true && false; // false (either side is false) 
+true || false; // true (either side is true)
+false || false; // false (both sides are false)
+!true; // false (not true)
+!false; // true (not false)
