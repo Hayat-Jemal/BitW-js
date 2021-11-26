@@ -36,4 +36,19 @@ console.log(myObject.myString); // dot notation
 console.log(myObject['myString']); // bracket notation
 console.log(myArray[0]); // bracket notation never dot notation
 
+// map, weakMap, set, weakSet
 
+// symbols - unique identifiers
+const mySymbol = Symbol();
+const myotherSymbol = Symbol();
+
+console.log(mySymbol === myotherSymbol); // false
+console.log(mySymbol == myotherSymbol); // false
+
+
+const myUniqueObject = {
+    [mySymbol]: 'hello from a symbol',
+    [myotherSymbol]: 'hello from another symbol',
+}
+
+console.log(myUniqueObject[myotherSymbol]);
