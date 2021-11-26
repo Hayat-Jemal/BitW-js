@@ -53,7 +53,64 @@ orderPizza(function() {
 
 const time = 2000;
 
+// promises
+const orderPizza = () =>  new Promise((resolve, reject) => {
+    console.log('Ordering pizza');
+    setTimeout(() => {
+        getRandomIntBetweenRange(1,3) < 3 ?   resolve('pizza is ordered') : reject('No one answered');
+    }, time);
+});
+const prepPizza = () => new Promise((resolve, reject) => {
+    console.log('pizza is being prepped');
+    setTimeout(() => {
+        getRandomIntBetweenRange(1,3) < 3 ? resolve('pizza is prepped') : reject('pizza is dropped');
+    }, time);
+});
+const cookPizza = () => new Promise((resolve, reject) => {
+    console.log('pizza is being cooked');
+    setTimeout(() => {
+        getRandomIntBetweenRange(1,3) < 3 ? resolve('pizza is cooked') : reject('pizza is burnt');
+    }, time);
+});
 
+const deliverPizza = () => new Promise((resolve, reject) => {
+    console.log('pizza is being delivered');
+    setTimeout(() => {
+        getRandomIntBetweenRange(1,3) < 3 ? resolve('pizza is delivered') : reject('pizza guy fall asleep');
+    }, time);
+});
+
+const eatPizza = () => new Promise((resolve, reject) => {
+    console.log('pizza is eaten');
+    setTimeout(() => {
+        getRandomIntBetweenRange(1,3) < 3 ? resolve('pizza is eaten') : reject('pizza is dropped');
+    }, time);
+});
+
+orderPizza()
+.finally(() => {
+    console.log('finally');
+})
+.then((data) => {
+    console.log('orderPizza resolve to: ', data);
+    return prepPizza();
+}).then((data) => {
+    console.log('prepPizza resolve to:', data);
+    return cookPizza();
+})
+.then((data) => {
+    console.log('cookPizza resolves to:', data);
+    return deliverPizza();
+}).then(data => {
+    console.log('data', data);
+    return eatPizza();
+}).then(data => {
+    console.log('eatPizza resolve to: ', data)
+}).catch(err => {
+    console.log('err', err, 'give refund');
+}).finally(() => {
+    console.log('finally');
+})
 
 
 
