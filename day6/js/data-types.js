@@ -15,3 +15,25 @@ const falsyValues = {
     null: null,
     NaN: NaN,
 }
+
+// organize those answers
+const complexTypes = {
+    object: 'object',
+    array: 'array',
+}
+
+// variables
+const myString = 'hello from a variable';
+// property
+const myObject = {
+    myString : 'hello from an object'
+}
+// list of items (index)
+const myArray = ['hello from an array 1', 'hello from an array 2', 'hello from an array 3'];
+
+console.log(myString);
+console.log(myObject.myString); // dot notation
+console.log(myObject['myString']); // bracket notation
+console.log(myArray[0]); // bracket notation never dot notation
+
+
