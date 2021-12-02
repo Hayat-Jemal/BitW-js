@@ -252,3 +252,62 @@ const controlFlow = {
     },
   },
 };
+function getValidPhoneNumber() {
+  const phoneNumber = prompt("Enter your phone number");
+  if (!pattern.test(phoneNumber)) {
+    alert("That is not a valid phone number");
+    return getValidPhoneNumber();
+  } else {
+    return phoneNumber;
+  }
+}
+
+// getValidPhoneNumber();
+
+function myFunction(param1, param2, param3) {
+  console.log(param1, param2);
+  console.log(param1 + param2);
+  return param1 * param2;
+}
+// param1, param2, param3
+const myValue = myFunction(2, 3, 4);
+
+const myObject = {
+  myMethod: myFunction,
+};
+
+console.log("myValue", myObject.myMethod(4, 6));
+
+function double(param) {
+  return param * 2;
+}
+
+function add(param1, param2) {
+  return param1 + param2;
+}
+
+function area(length, width, height) {
+  return length * width * height;
+}
+const myButton = document.querySelector("button");
+
+if (myButton) {
+  myButton.addEventListener("click", (self) => {
+    console.log("button clicked");
+  });
+}
+
+// callbacks
+function whenSomeoneClicksAnywhere() {
+  console.log("someone clicked");
+}
+document.addEventListener("click", whenSomeoneClicksAnywhere);
+
+// promises
+fetch("https://api.github.com/users/vinferno")
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+    console.log(data);
+  });
