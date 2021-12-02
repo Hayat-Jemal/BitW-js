@@ -122,5 +122,67 @@ console.log('sliced', sliced);
 array.forEach(item => {
     // console.log(item);
 });
+// // types of loops
+// for(let i = 2; i <= 10; i += 2) {
+//     console.log(i);
+// }
 
+// let x = 1;
+// while(x < .5){
+//     console.log('x is still less than 10', x);
+//     x++;
+
+//     x = Math.random();
+// }
+
+// x = 100;
+// do {
+//     x++;
+//     console.log('x is still less than .50', x);
+
+
+//     x = Math.random();
+// } while(x < .5);
+
+
+
+// for(let i = 0; i < array.length; i++) {
+//     console.log(array[i]);
+// }
+// x = 0;
+// while(x < array.length) {
+//     console.log(array[x]);
+//     x++;
+// }
+
+console.dir(document);
+
+const li = document.querySelector('li');
+
+document.querySelectorAll('li')[0].style.color = 'green';
+li.style.fontSize = '40px';
+li.innerText = 'green';
+
+let score = 0;
+
+// document.addEventListener('scroll', () => {
+//     console.log('scrolling');
+// })
+
+for (let i = 0; i < 1000; i++) {
+    let score = 0;
+    const li = document.createElement('li');
+    li.innerText = i;
+    document.body.appendChild(li);
+    li.style.overflowY = 'scroll';
+    li.draggable = true;
+
+    li.addEventListener('dragstart', function() {
+        console.log('clicked', this);
+        this.style.color = 'red';
+        this.innerText = 'red';
+        score++;
+        this.innerText = score;
+    });
+}
 
