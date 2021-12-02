@@ -114,3 +114,141 @@ const operators = {
     assign: { value: (a = 1) },
   },
 };
+let message = "Hello";
+
+const popups = {
+  alert: { syntax: "alert(message)", value: 'alert("Hello World!");' },
+  confirm: { syntax: "confirm(message)", value: 'confirm("Are you sure?");' },
+  prompt: {
+    syntax: "prompt(message)",
+    value: 'a = prompt("What is your name?");',
+  },
+};
+
+const date = {
+  now: { value: new Date().getTime() },
+  getDate: { value: new Date().getDate() },
+  getDay: { value: new Date().getDay() },
+  getFullYear: { value: new Date().getFullYear() },
+  getHours: { value: new Date().getHours() },
+  getMilliseconds: { value: new Date().getMilliseconds() },
+  getMinutes: { value: new Date().getMinutes() },
+  getMonth: { value: new Date().getMonth() },
+  getSeconds: { value: new Date().getSeconds() },
+  getTime: { value: new Date().getTime() },
+  getTimezoneOffset: { value: new Date().getTimezoneOffset() },
+  getUTCDate: { value: new Date().getUTCDate() },
+  getUTCDay: { value: new Date().getUTCDay() },
+  getUTCFullYear: { value: new Date().getUTCFullYear() },
+  getUTCHours: { value: new Date().getUTCHours() },
+  getUTCMilliseconds: { value: new Date().getUTCMilliseconds() },
+  getUTCMinutes: { value: new Date().getUTCMinutes() },
+  getUTCMonth: { value: new Date().getUTCMonth() },
+  getUTCSeconds: { value: new Date().getUTCSeconds() },
+  getYear: { value: new Date().getYear() },
+  setDate: { value: new Date().setDate(1) },
+  setFullYear: { value: new Date().setFullYear(2020) },
+  setHours: { value: new Date().setHours(1) },
+  setMilliseconds: { value: new Date().setMilliseconds(1) },
+  setMinutes: { value: new Date().setMinutes(1) },
+  setMonth: { value: new Date().setMonth(1) },
+  setSeconds: { value: new Date().setSeconds(1) },
+  setTime: { value: new Date().setTime(1) },
+  setUTCDate: { value: new Date().setUTCDate(1) },
+  setUTCFullYear: { value: new Date().setUTCFullYear(2020) },
+  setUTCHours: { value: new Date().setUTCHours(1) },
+  setUTCMilliseconds: { value: new Date().setUTCMilliseconds(1) },
+  setUTCMinutes: { value: new Date().setUTCMinutes(1) },
+  setUTCMonth: { value: new Date().setUTCMonth(1) },
+  setUTCSeconds: { value: new Date().setUTCSeconds(1) },
+  setYear: { value: new Date().setYear(2020) },
+  toDateString: { value: new Date().toDateString() },
+  toISOString: { value: new Date().toISOString() },
+  toJSON: { value: new Date().toJSON() },
+  toLocaleDateString: { value: new Date().toLocaleDateString() },
+  toLocaleString: { value: new Date().toLocaleString() },
+  toLocaleTimeString: { value: new Date().toLocaleTimeString() },
+  toString: { value: new Date().toString() },
+  toTimeString: { value: new Date().toTimeString() },
+  toUTCString: { value: new Date().toUTCString() },
+  valueOf: { value: new Date().valueOf() },
+};
+
+const math = {
+  abs: { value: Math.abs(-1) },
+  acos: { value: Math.acos(1) },
+  asin: { value: Math.asin(1) },
+  atan: { value: Math.atan(1) },
+  atan2: { value: Math.atan2(1, 1) },
+  ceil: { value: Math.ceil(1) },
+  cos: { value: Math.cos(1) },
+  exp: { value: Math.exp(1) },
+  floor: { value: Math.floor(1) },
+  log: { value: Math.log(1) },
+  max: { value: Math.max(1, 1) },
+  min: { value: Math.min(1, 1) },
+  pow: { value: Math.pow(1, 1) },
+  random: { value: Math.random() },
+  round: { value: Math.round(1) },
+  sin: { value: Math.sin(1) },
+  sqrt: { value: Math.sqrt(1) },
+  tan: { value: Math.tan(1) },
+};
+
+console.log(date["getFullYear"]);
+
+const controlFlow = {
+  if: {
+    exameple1: function () {
+      if (a == 1) {
+        console.log("true");
+      }
+    },
+  },
+
+  ifElse: {
+    exameple2: function () {
+      if (a == 1) {
+        console.log("true");
+      } else {
+        console.log("false");
+      }
+    },
+  },
+  ifElseIf: {
+    exameple3: function () {
+      if (a == 1) {
+        console.log("true");
+      } else if (a == 2) {
+        console.log("false");
+      } else if (a == 3) {
+        console.log("false");
+      } else {
+        console.log("else");
+      }
+    },
+  },
+  switch: {
+    exameple4: function () {
+      switch (a) {
+        case 1:
+          console.log("true");
+          break;
+        case 2:
+          console.log("false");
+          break;
+        case 3:
+          console.log("false");
+          break;
+        default:
+          console.log("else");
+          break;
+      }
+    },
+  },
+  ternary: {
+    exameple5: function () {
+      a == 1 ? console.log("true") : console.log("false");
+    },
+  },
+};
