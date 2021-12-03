@@ -104,41 +104,41 @@ array.sort((a, b) => {
 
 console.log(array)
 
-const mapped = array.map(item => {
-    return {value: item * 2};
-});
+// const mapped = array.map(item => {
+//     return {value: item * 2};
+// });
 
-console.log('mapped', mapped);
+// console.log('mapped', mapped);
 
-const reduced = array.reduce( (acc, item) => {
-    return acc + item;
-}, 0); // returns sum of array
+// const reduced = array.reduce( (acc, item) => {
+//     return acc + item;
+// }, 0); // returns sum of array
 
-console.log('reduced', reduced);
+// console.log('reduced', reduced);
 
-const sliced =array.slice(4, 8); // returns new array with elements from index 4 to index 8
-console.log('sliced', sliced);
+// const sliced =array.slice(4, 8); // returns new array with elements from index 4 to index 8
+// console.log('sliced', sliced);
 
-array.forEach(item => {
-    // console.log(item);
-});
-// // types of loops
-// for(let i = 2; i <= 10; i += 2) {
-//     console.log(i);
-// }
+// array.forEach(item => {
+//     // console.log(item);
+// });
+// // // types of loops
+// // for(let i = 2; i <= 10; i += 2) {
+// //     console.log(i);
+// // }
 
-// let x = 1;
-// while(x < .5){
-//     console.log('x is still less than 10', x);
-//     x++;
+// // let x = 1;
+// // while(x < .5){
+// //     console.log('x is still less than 10', x);
+// //     x++;
 
-//     x = Math.random();
-// }
+// //     x = Math.random();
+// // }
 
-// x = 100;
-// do {
-//     x++;
-//     console.log('x is still less than .50', x);
+// // x = 100;
+// // do {
+// //     x++;
+// //     console.log('x is still less than .50', x);
 
 
 //     x = Math.random();
@@ -168,17 +168,7 @@ let score = 0;
 document.addEventListener('scroll', () => {
     console.log('scrolling');
 })
-const li = document.querySelector("li");
 
-document.querySelectorAll("li")[0].style.color = "green";
-li.style.fontSize = "40px";
-li.innerText = "green";
-
-let score = 0;
-
-document.addEventListener("scroll", () => {
-  console.log("scrolling");
-});
 
 for (let i = 0; i < 1000; i++) {
     let score = 0;
