@@ -165,9 +165,20 @@ li.innerText = 'green';
 
 let score = 0;
 
-// document.addEventListener('scroll', () => {
-//     console.log('scrolling');
-// })
+document.addEventListener('scroll', () => {
+    console.log('scrolling');
+})
+const li = document.querySelector("li");
+
+document.querySelectorAll("li")[0].style.color = "green";
+li.style.fontSize = "40px";
+li.innerText = "green";
+
+let score = 0;
+
+document.addEventListener("scroll", () => {
+  console.log("scrolling");
+});
 
 for (let i = 0; i < 1000; i++) {
     let score = 0;
