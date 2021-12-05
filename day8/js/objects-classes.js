@@ -226,3 +226,23 @@ function gameLoop() {
 }
 
 gameLoop();
+
+// day8 exercise
+
+const dog = {
+  name: "kuk",
+  legs: 4,
+  color: "white",
+  speak: ()=>alert("Woof!")
+}
+dog.speak ()
+const createli = () => {
+  const li = document.createElement("li");
+  return document.body.appendChild(li)
+
+}
+createli().innerHTML = dog.name
+createli().innerHTML = dog.legs;
+createli().innerHTML = dog.color;
+
+
