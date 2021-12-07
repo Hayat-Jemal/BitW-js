@@ -194,10 +194,10 @@ switch (day) {
     console.log("happy weekend");
 }
 // ternary operator
-// const age = 18;
-// if (typeof age !== "number") {
-//   alert("not a number");
-// }
+const age = 18;
+if (typeof age !== "number") {
+  alert("not a number");
+}
 const canVote = age >= 18 ? "yes" : "no";
 
 // functions vs methods
