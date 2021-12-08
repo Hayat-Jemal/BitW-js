@@ -4,14 +4,13 @@ let page = "register";
 
 const storageData = localStorage.getItem("data");
 
-const data = storageData
-  ? JSON.parse(storageData)
+const data = storageData? JSON.parse(storageData)
   : {
       users: [],
     };
 
 // forms
-
+// using EventListener
 forms.register.addEventListener("submit", (event) => {
   event.preventDefault();
   console.log("submit register");
