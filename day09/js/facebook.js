@@ -4,10 +4,7 @@ let page = "register";
 
 const storageData = localStorage.getItem("data");
 
-const data = storageData? JSON.parse(storageData)
-  : {
-      users: [],
-    };
+const data = storageData? JSON.parse(storageData): {users: [], };
 
 // forms
 // using EventListener
