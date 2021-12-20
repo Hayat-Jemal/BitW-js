@@ -100,7 +100,7 @@ alert(isEven(5));
 //Function — a set of instructions that perform a task.
 //Method — a set of instructions that are associated with an object.
 
-FUNCTIONS;
+// FUNCTIONS;
 
 function welcomeMessage() {
   console.log("Welcome to JavaScript");
