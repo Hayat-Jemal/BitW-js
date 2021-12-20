@@ -83,3 +83,39 @@ export function buildCardElements(deck) {
   });
 }
 
+export function createPile() {
+  const pile = document.createElement("div");
+  pile.classList.add("pile");
+  document.body.appendChild(pile);
+  pile.addEventListener("click", () => {
+    console.log("pile clicked");
+  });
+  return pile;
+}
+
+export function placeCardsOnPile({ deck, top, pile, name }) {
+  pile.style.top = top;
+  pile.style.zIndex = "0";
+  deck.forEach((card, index) => {
+    card.element.style.top = top;
+    card.element.style.zIndex = index + 1;
+    card.element.name = name;
+    card.element.value = card.value;
+  });
+}
+
+function getValue(string) {
+  switch (string) {
+    case "A":
+      return 14;
+    case "K":
+      return 13;
+    case "Q":
+      return 12;
+    case "J":
+      return 11;
+    default:
+      return parseInt(string);
+  }
+}
+
